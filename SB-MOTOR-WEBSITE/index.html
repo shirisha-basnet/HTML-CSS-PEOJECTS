@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thar cars Websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="cars">
+        <nav>
+            <img src="logo.png"class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>The THAR CARS</h2>
+            <h1>AX Opt & LX </h1>
+            <p>he latest version of Mahindra THAR which has been launched in India with various features like different engine types (petrol or diesel), transmission modes (manual or automatic), drivetrain configurations (4 wheel drive or rear wheel drive) etc</p>
+            <h3>Chose your color</h3>
+            <div class="color-select">
+                <div id="red"></div>
+                <div id="green"></div>
+                <div id="black"></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById("red");
+        let greenBtn = document.getElementById("green");
+        let blackBtn = document.getElementById("black");
+        let cars = document.getElementById("cars");
+
+        blackBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic1.png)";
+
+        }
+        
+        redBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic2.png)";
+
+        }
+        
+        greenBtn.onclick = function(){
+            cars.style.backgroundImage = "url(pic3.png)";
+
+        }
+    </script>
+</body>
+</html>
